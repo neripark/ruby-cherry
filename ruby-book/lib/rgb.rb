@@ -6,8 +6,7 @@ def to_hex r, g, b
 end
 
 def to_ints hx
-  hx.slice!('#')
-  ints = [hx[0, 2], hx[2, 2], hx[4, 2]]
+  ints = [hx[1, 2], hx[3, 2], hx[5, 2]]
   ints.map do |el|
     el.to_i(16)
   end
